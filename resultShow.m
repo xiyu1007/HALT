@@ -1,8 +1,8 @@
-
-
 clc;
 clear;
 close all;
+addpath(genpath('Requirement'))
+
 % dataname=["Yale","3Sources","MSRC_v1","NGs","BBCSport","Webkb","Caltech101_7","HW","NUS_WIDE","BDGP","OutdoorScene","MNIST_4"];
 % dataname=["Hdigit","Animal", "ALOI", "Reuters", "NUSWIDEOBJ"];
 dataname = "Yale";              % Dataset name
@@ -45,3 +45,4 @@ function plotLoss(Loss)
 			'$\|\mathcal{H} - \mathcal{A} \times_3 (\mathcal{Z} + \mathcal{D}) - \mathcal{E}\|_\infty$'}, ...
 		'Interpreter', 'latex', 'FontSize', 11, 'Location', 'northeast');
 end
+
